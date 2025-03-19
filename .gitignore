@@ -1,0 +1,70 @@
+# 🚀 Python-related ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.cache
+
+# 🚀 Virtual Environment (venv)
+venv/
+env/
+*.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 🚀 IDE/Editor-specific ignores
+.vscode/
+.idea/
+*.sublime-workspace
+
+# 🚀 Logs and Debug Files
+logs/
+*.log
+debug.log
+nohup.out
+
+# 🚀 FastAPI & Uvicorn
+*.pid  # Uvicorn process ID files
+
+# 🚀 Secret Keys & Credentials
+.env
+config.yaml
+secrets.json
+
+# 🚀 Dependencies
+poetry.lock
+Pipfile
+Pipfile.lock
+requirements.txt
+
+# 🚀 Database & Cache Files
+*.sqlite3
+*.db
+mongodb_data/
+redis_data/
+
+# 🚀 PDF Processing Temporary Files
+*.pdfplumber_cache
+pdf_temp/
+
+# 🚀 Celery & Redis Queues
+celerybeat-schedule
+celerybeat.pid
+*.sock
+*.pid
+
+# 🚀 Docker & Deployment
+docker-compose.override.yml
+.dockerignore
+*.dockerfile
+*.tar
+
+# 🚀 Node.js/React (if using for frontend)
+node_modules/
+*.lock
+build/
+dist/
+package-lock.json
+yarn.lock
+npm-debug.log
+.DS_Store  # macOS

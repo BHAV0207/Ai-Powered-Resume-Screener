@@ -4,4 +4,4 @@ from app.core.config import MONGO_URI, DATABASE_NAME
 client =AsyncIOMotorClient(MONGO_URI)
 db = client[DATABASE_NAME]
 
-resume_collections = db.get_collection("resumes")
+resume_collection = db.get_collection("resumes")

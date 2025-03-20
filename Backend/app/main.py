@@ -1,9 +1,14 @@
 from fastapi import FastAPI
-from .core.database import db 
+from app.api.endpoints import resumes 
+from app.api.endpoints import matching
 
 app = FastAPI()
 
-@app.get("/test-db")
-async def test_db():
-    collections = await db.list_collection_names()
-    return {"collections": collections}
+# ✅ Register API routes
+app.include_router(resumes.router, prefix="/api")
+
+app.include_router(matching.router , prefix="/api")
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to AI Resume Screener!"}
